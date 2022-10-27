@@ -19,12 +19,12 @@ Route::get('/', function () {
 
 Route::group(['prefix' => 'mahasiswa'], function(){
     Route::get('/pendaftaran', function(){
-        return "Halaman Pendaftaran";
+        return view('mahasiswa.pendaftaran');
     });
     Route::get('/ujian', function(){
-        return "Halaman Ujian";
+        return view('mahasiswa.ujian');
     });
     Route::get('/nilai', function(){
-        return "Halaman Nilai";
+        return view('mahasiswa.nilai');
     });
 });
